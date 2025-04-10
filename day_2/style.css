@@ -1,0 +1,8 @@
+.logo{
+    width: 25rem;
+}
+.search{
+    width: 25rem;
+    display:flex;
+    overflow: hidden;
+}

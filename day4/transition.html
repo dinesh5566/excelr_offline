@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            margin: 10px 0;
+            background-color: royalblue;
+            transition-duration: 4s;
+            transition-property: all;
+
+        }
+        .box:hover{
+            transform:rotate(50deg);
+            background-color: yellowgreen;
+        }
+        .ease-in{
+
+        }
+
+        .ease-in-out{
+            transition-timing-function:ease-in-out;
+        }
+        .cubic{
+            transition-timing-function:
+
+        }    
+        </style>
+</head>
+<body>
+   <div class="box linear">linear</div>
+   <div class="box ease" >ease</div>
+   <div class="box ease-in">ease-in</div>
+   <div class="box ease-out">ease-out</div>
+   <div class="box ease-in-out">ease-in-out</div>
+   <div class="box cubic">cubic</div>
+   <div class="box steps">steps</div>
+
+</body>
+</html>
