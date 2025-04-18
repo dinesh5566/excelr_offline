@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor function</title>
+</head>
+<body>
+    <script>
+        function book(title, author,pages) {
+            this.title = title;
+            this.author = author;
+            this.pages=pages;
+            this.getSummary = function() {
+                return `${this.title} by ${this.author}, ${this.pages} pages`; 
+                
+            };
+            
+            };
+            const book1 = new book("The Alchemist", "Paulo Coelho", 208);
+                document.write(book1.getSummary());
+        
+    </script>
+</body>
+</html>

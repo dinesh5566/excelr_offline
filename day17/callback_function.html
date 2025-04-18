@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+    <script>
+        function greetUser(name, Callback) {
+            console.log("Hi " + name);
+            Callback(); // calling the passed-in function
+        }
+
+        function sayGoodbye() {
+            console.log("Goodbye!");
+        }
+
+        greetUser("Dinesh", sayGoodbye); // passing the function as an argument
+
+    </script>
+</body>
+</html>

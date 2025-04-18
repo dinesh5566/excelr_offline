@@ -1,0 +1,48 @@
+eg:
+     
+      Dog:
+            data/behavior/variables:name,color,age breed,height
+            actions/behavior/functions/methods:barking,eating.running,jumping
+        functions:
+
+
+
+
+
+
+prototype:
+     -it is a property of an object
+     -it allow to other object to inherit properties and methods
+     -it is used to add new properties and methods to an object
+     this created a prototype chain 
+
+
+--------------------------------------------------------------------
+ceation of objects:
+            
+        1.constructor function (before es6)
+        2.class
+2.class expression:
+----------------------------------------------------------
+      let classname=new class{
+              constructor(vaar1,var2....)}
+
+-------------------------------------------------------------------
+object literal:
+  
+   let obj={
+        'propertyname'='value'
+        'propertyname'='value'
+        }
+      
+=============================================================
+
+   Object.create():
+   -----------------
+                 const obj1={
+                          'property name'='value',
+                          }
+                    const obj2=Object.create(obj1)
+
+
+=====================================================================
