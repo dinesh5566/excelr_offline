@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let arr1=[10,20,30,50];
+        console.log(arr1); // [ 10, 20, 30, 50 ]
+        let arr4=new Array(3);
+        console.log(arr4); // [ <3 empty items> ]   
+        // console.log(arr4.length); // 3
+        let arr5=new Array(1);
+        console.log(arr5); // [ <1 empty item> ]
+        arr5[0]=10;
+        let arr6=Array.of('developer');
+        console.log(arr6); // [ 'developer' ]
+        let arr7=[10,20,30,40,50];
+        console.log(arr7[0]);
+        arr7[1]=10000;
+        console.log(arr7[1]); // 10000
+        arr7[1]=20000;
+        console.log(arr7[1]); // [ 10, 10000, 30, 40, 50 ]
+        //adding values to array
+        let arr8=['this',,'is','array','session'];
+        console.log(arr8); // [ 'this', <1 empty item>, 'is', 'array', 'session' ]
+        arr8[4]=1000;
+        arr8[9]=200;
+        console.log(arr8.length); // [ 'this', <1 empty item>, 'is', 'array', 1000, <4 empty items>, 200 ]
+        console.log(arr8[7]); // [ 'this', <1 empty item>, 'is', 'array', 1000, <4 empty items>, 200 ]
+        arr8.push('example');
+        console.log(arr8); // [ 'this', <1 empty item>, 'is', 'array', 1000, <4 empty items>, 200, 'example' ]
+        arr8.unshift('hello');
+        console.log(arr8);
+        //removing values from array
+        arr8.pop();
+        console.log(arr8); 
+        arr8.shift();
+        console.log(arr8);
+
+        //at method
+        let arr9=[10,20,30,40,50];
+        console.log(arr9.at(0)); // 10
+        console.log(arr9.at(-1)); // 50
+        console.log(arr9.at(8)); // undefined
+
+       // let arr1=[10,20,30,40,50];
+        let squareArr=arr1.map((num, index, arr1)=>num*num);
+        console.log(arr1,squareArr); // [ 100, 400, 900, 1600, 2500 ]
+
+        //let arr2=['this','is','array','session'];
+        let arr3=arr2.map((e) =>e.toUppercase() );
+        console.log(arr2,arr3); // [ 'THIS', 'IS', 'ARRAY', 'SESSION' ]
+
+        let arr1=[10,21,36,45,50];
+       // let arr2=arr1.filter(
+       //     (e,index,arr1)=>{
+       //     e%2==0 //even numbers
+        //}
+        //)
+       // let arr2=arr1.filter((e,index,arr1)=>e%2==0)
+        console.log(arr1); // [ 10, 21, 36, 45, 50 ]
+        console.log(arr2); // [ 10, 36, 50 ]
+
+
+        let inputArr=[6,7,8,9,10];
+        let arr2=inputArr.map(e=>e*e*e).filter(e=>e%2!=0);
+        console.log(inputArr); // [ 6, 7, 8, 9, 10 ]
+        console.log(arr2); // [ 343, 729 ]
+        
+     
+    </script>
+
+</body>
+</html>
