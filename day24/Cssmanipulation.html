@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">this is a div</div>
+    <div id="conainer">this another container</div>
+    <button onclick="addHighlight()">click to add highlights</button>
+    <script>
+        let div1=document.getElementById("div1");
+        div1.style.color="red";
+       div1.style.fontSize="30px";
+       console.log(div1.style.color); // accessing the style property
+
+       //accessing the class property
+
+         let container=document.getElementById("conainer");
+         function addHighlight(){
+            container.classList.add("highlight");
+         }
+       
+        
+        
+    </script>
+</body>
+</html>

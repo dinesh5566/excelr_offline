@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        first_function();
+        function first_function() {
+            console.log("this is first function");
+        }
+        first_function(); // this is first function
+
+//------------------------------------------------------
+        function second_function(name) {
+            console.log("Hello" + " "+name +"!");
+        }
+        second_function("Dinesh"); // this is second function
+
+//------------------------------------------------------
+        function third_function(name, age) {
+            console.log(`Hello ${name}! you are ${age} years old.`); //template literals
+        }
+        third_function("Dinesh", 25); // Hello Dinesh! You are 25 years old.
+
+        console.log(third_function("Dinesh", 25)); // undefined
+        
+//------------------------------------------------------
+        function fourth_function(name, age) {
+            return `Hello ${name}! you are ${age} years old.`; //template literals
+        }
+        let data= fourth_function("Dinesh", 25); // Hello Dinesh! You are 25 years old.
+        console.log(data); // Hello Dinesh! You are 25 years old.
+        console.log(fourth_function("Dinesh", 25)); // Hello Dinesh! You are 25 years old.
+
+        
+    </script>
+</body>
+</html>

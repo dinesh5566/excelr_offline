@@ -9,6 +9,10 @@
 
     <div id ="div1">
         <!-- p tag-->
+         <p id="removedp">this is a removed text</p>
+         <p id="replacep">this is a replaced paragraph</p>
+
+         <i id="insertdp">this is adjacent text</p>
     </div>
     <script>
         let div = document.getElementById('div1');
@@ -33,6 +37,19 @@
         }
 
         div.appendChild(ul);
+        let removedp=document.getElementById("removedp");
+        div.removeChild(removedp);
+
+        let replacedp=document.getElementById("replacep");
+        let newp=document.createElement('p');
+        newp.innerHTML="this is a new paragraph";
+        div.replaceChild(newp,replacedp);
+
+        let adjacentp=document.createElement('i');
+        adjacentp.innerHTML="this is an adjacent paragraph";  
+        div.insertBefore(adjacentp,document.getElementById("insertdp"));
+        //insertdp.innerHTML="this is a new paragraph";
+        //div.insertBefore(insertdp,replacedp);
     </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function vote(age){
+            if (age>=18){
+                return "you are eligible to vote";
+            }
+            else{
+                return "you are not eligible to vote";
+            }
+            
+        }
+        let age=prompt("enter your age");
+        let userAge=parseInt(age);
+        let result=vote(userAge); // you are eligible to vote
+        console.log(result); // you are eligible to vote
+        alert(result); // you are eligible to vote
+        document.write(result); // you are eligible to vote
+        
+        
+        
+
+    </script>
+</body>
+</html>
