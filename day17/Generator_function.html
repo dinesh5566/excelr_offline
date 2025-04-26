@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+<<<<<<< HEAD
 
 
 
@@ -24,6 +25,18 @@
   //  document.write(generator.next().value,"<br>"); // 2
     //document.write(generator.next().value,"<br>"); // 3
   //  document.write(generator.next().value,"<br>"); // undefined
+=======
+    let generatorFunction = function* () {
+        yield 1;
+        yield 2;
+        yield 3;
+    };
+    let generator = generatorFunction();
+    document.write(generator.next().value, "<br>"); // 1
+    document.write(generator.next().value,"<br>"); // 2
+    document.write(generator.next().value,"<br>"); // 3
+    document.write(generator.next().value,"<br>"); // undefined
+>>>>>>> a1330d4a79fd7e46e20ccab3477f66bb632eef4c
     </script>
 </body>
 </html>
