@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+    <script>
+
+                let username = prompt("Enter your name");
+
+                function authentication(username, issuccess, isfailure1, isfailure2, isfailure) {
+                  if (username === "Dinesh") {
+                    let password = prompt("Enter your password"); 
+                    if (password == 1234) {
+                      issuccess(username);
+                    } else {
+                      isfailure1(password !=1234);
+                    }
+                  } else {
+                    isfailure2(username !="Dinesh"); // username is wrong
+                  }
+                }
+
+                function issuccess(username) {
+                  document.write(`Welcome ${username}`);
+                }
+
+                function isfailure1() {
+                  document.write(`Password is wrong`);
+                }
+
+                function isfailure2() {
+                  document.write(`Username is wrong`);
+                }
+
+                function isfailure() {
+                  document.write(`Username and password are wrong`);
+                }
+
+                authentication(username, issuccess, isfailure1, isfailure2, isfailure);
+          
+
+
+         //  function greetUser(name, Callback1,callback2) {
+         //   console.log("Hi " + name);
+         //   Callback1(); // calling the passed-in function
+         //   callback2(name);
+        //}
+
+        //function sayGoodbye() {
+        //    console.log("Goodbye!");
+            
+        //}
+        //function wish(name){
+          //  console.log("hii" +" "+name +" "+ "warm welcome to you");
+            
+        //}
+
+        //greetUser("Dinesh", sayGoodbye, wish); // passing the function as an argument
+
+    </script>
+</body>
+</html>

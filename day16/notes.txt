@@ -1,0 +1,67 @@
+Tokens:
+     1.identifiers
+     2.keywords
+     3.literals/values
+     4.data types
+     5.operators
+     6.variables
+
+
+ identifiers: provide names
+     1.variable names
+     2.function names
+     3.class names
+
+
+ variable names:
+     1.cannot start with number
+     2.cannot start with special characters(except _ and $)
+     3.cannot conain space
+     4.cannot be reversed(inbuilt) keywords
+     5.should be meaningful
+     6.should be short
+
+Ex:
+     a=10;(correct)
+     1a=10;(wrong)
+     $a=10;(correct)
+     _a=10;(correct) only $,_ characters are correct remaining all are wrong
+
+
+==================================================== ==========================================
+keywords:
+     reserved words-if else for while etc
+
+=================================================================================================
+Literals/value/data:
+         1.number
+             10 , -10 , 10.0
+         2.String
+             -group of charactors
+             -denoted with double quotes(""), single quotes(''), backticks(``),
+              template literals/back ticks(``)-used for interpolation
+         3.Boolian
+             -true or false
+         4.Null
+         5.Undefined
+         6.Symbol
+         7.Array
+         8.Object
+
+====================================================================
+Datatypes:
+     1.Primitive Datatypes- immutable(directly stores in memory)
+               1.number  --10, -10, 10.0
+               2.String  --"" ,'',``
+               3.Boolean  --true or false
+               4.Null     --no value-object types
+               5.UNdefined -declares variable without value 
+               6.Symbol    -symbol("id")
+               7.bigint    -2344444444444444444n
+     2.Non-primitive Datatypes-mutable/ store data in reference
+                1.Array
+                2.object
+                3.Map
+                4.store
+                5.Date
+                6.Regexp

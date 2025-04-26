@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id ="div1">
+        <!-- p tag-->
+         <p id="removedp">this is a removed text</p>
+         <p id="replacep">this is a replaced paragraph</p>
+
+         <i id="insertdp">this is adjacent text</p>
+    </div>
+    <script>
+        let div = document.getElementById('div1');
+        let p = document.createElement('p');
+      
+        p.innerHTML = "this is a paragraph";
+        p.style.color = "red";
+        div.appendChild(p);
+
+        let arr=[10,20,30,41,50];
+        let ul=document.createElement('ul');
+        for (let e of arr){
+            let li=document.createElement('li');
+            if(e%2==0){
+                li.style.color="green";
+            }
+            else{
+                li.style.color="red";
+            }
+            li.innerHTML=e;
+            ul.appendChild(li);
+        }
+
+        div.appendChild(ul);
+        let removedp=document.getElementById("removedp");
+        div.removeChild(removedp);
+
+        let replacedp=document.getElementById("replacep");
+        let newp=document.createElement('p');
+        newp.innerHTML="this is a new paragraph";
+        div.replaceChild(newp,replacedp);
+
+        let adjacentp=document.createElement('i');
+        adjacentp.innerHTML="this is an adjacent paragraph";  
+        div.insertBefore(adjacentp,document.getElementById("insertdp"));
+        //insertdp.innerHTML="this is a new paragraph";
+        //div.insertBefore(insertdp,replacedp);
+    </script>
+</body>
+</html>

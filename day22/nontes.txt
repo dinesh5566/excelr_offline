@@ -1,0 +1,27 @@
+splice():
++++++++++
+         -it is used to add remove elements from an Array
+         -it returns an array
+         -it changes an original array
+syntax:
+
+array.splice(start,deletecount,element1,element2,element3,.....elementnN);
+start: it is sed to specify the starting index
+deletecount:it is used to specify the numberof elements to be  removed(optional)
+element1,elemen2,element3,....elementnN
+               it is used to specify the elements to be added(optinal)
+
+
+
+some():
+++++++++
+        -it is used to check if any of the elements of an array satisfy a specific condition
+        -it returns a bboolean value
+        it introduced in es6
+
+syntax:
+ arra.some((element,index,array)=>{
+        //condition
+        return element;
+
+ })

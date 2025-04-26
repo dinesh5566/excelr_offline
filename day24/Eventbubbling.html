@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width:200px;
+            height:200px;
+            background-color:green;
+            padding: 20px;
+        }
+        #box2{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <button id="btn">click</button>
+        </div>
+    </div>
+    <script>
+        let box1=document.getElementById("box1");
+        let box2=document.getElementById("box2");
+        let button=document.getElementById("btn");
+        box1.addEventListener("click",function(){
+            console.log("box1 clicked");
+        });
+        box2.addEventListener("click",function(event){
+            console.log("box2 clicked");
+            event.stopPropagation(); // stop the event from bubbling up to the parent element
+        });
+        button.addEventListener("click",function(event){
+            console.log("button clicked");
+            event.stopPropagation(); // stop the event from bubbling up to the parent element
+        });
+    </script>
+</body>
+</html>

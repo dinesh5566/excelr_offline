@@ -1,0 +1,54 @@
+BOM:(browser object model)
+------
+     -it is a collection of objects thatrepresent the browswer environment
+     -it provides access to the browser window and document objects
+     -it access specific feaature of the browsers such as navigation, location,
+use cases:
+    1.redirect to another page
+    2.open a new window/tab
+    3.browser alerts
+    4.access browser info
+    5.access browsers history
+    6.access browsers location
+
+
+DOM:(document object model)
+     -it represents the structure of HTML document and its content as atree of objects
+     -it is a collection of objects that represents the HTML document
+     -it provides access to the HTML elments and their properties 
+     -it manipulates the HTML document and Css
+
+use cases:
+         1.creating dynamic web pages
+         2.manipulating HTML document
+         3.ccreating interactive web pages
+         4.providing css
+         5.providing js
+         6.create or removing elements
+         7.Handling elements
+
+
+                         DOM                           BOM
+-------------------------------------------------------------------------
+purpose       interact with the HTML document   interact with the browser
+
+Mainobject   document                              window                
+
+-------------------------------------------------------------------------
+DOM manipulation:
++++++++++++++++++
+            1.Element accesssing
+            2.Element creation
+            3.Element removal
+            4.Element modification/Manipulation
+            5.Attribute manipulation
+            6.Css manipulation
+            7.Event manipulation/Handling
+
+1.Element accessing:
+               -accessing Element by DOM methods
+      1.getElementById()
+      2.getElementByClassname()
+      3.getElementByTagName()
+      4.querySelector()
+      5.querySelectorAll()

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove EventHndler</title>
+</head>
+<body>
+    <body>
+        <button id="btn">click</button>
+        <script>
+            function buttonclick(){
+                alert("hello world");
+                button.removeEventListener("click",buttonclick);
+            }
+            let button=document.getElementById("btn");
+            button.addEventListener("click",buttonclick);
+    
+
+           
+        </script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,14 @@
+1.Array Creation:
+     let arr1=[10,20,30,50];
+2.Array Constructor:
+     let arr2=new Array[10,20,30,50];
+     let Array3=new Array(5);[_,_,_,_,_]
+3.Array .from:
+    let StringData='hello';
+    let charArr=array.from(StringData);
+4.Array of()
+let num Array=Array.of(10,20,30,50);
+it is used to
+-----------------------------------------------------------------
+accessing data from Array:
+

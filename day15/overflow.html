@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box{
+            width:500px;
+            height:50px;
+            background-color: red;
+
+        }
+        .one{
+            overflow:hidden;
+        }
+        .two{
+            overflow:visible;
+        }
+        .three{
+            overflow:scroll;
+        }
+    </style>
+</head>
+<body>
+    <p>this is hidden</p>
+    <div class="box one">
+        
+    umerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.35 KiB | 460.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)       
+remote: Resolving deltas: 100%
+    </div> 
+
+
+
+
+
+    <p>this is visible/default</p>
+    <div class="box two">
+       
+        umerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.35 KiB | 460.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)       
+remote: Resolving deltas: 100% 
+   
+</div>
+<br>
+
+
+
+
+     <p>this is scroll</p>
+
+
+    <div class="box three">
+        
+        umerating objects: 8, done.Counting objects: 100% (8/8), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (6/6), done.
+        Writing objects: 100% (6/6), 1.35 KiB | 460.00 KiB/s, done.
+        Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)       
+        remote: Resolving deltas: 100% 
+    </div>
+        
+</body>
+</html>
