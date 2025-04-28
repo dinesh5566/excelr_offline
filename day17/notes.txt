@@ -22,16 +22,18 @@ types:
      higher order functions
 
 ============================================================================
+
+
 1.function decleation/named function/general function:
    ------------------------------------------------
 
-
-
-
+function decleation/named function/general function:
+---------------------------------------------------
     syntax:
     function functionName/Identifier(){
         //set to sentence that performs a task
     }
+
    -------------------------------------------------------
 
      //passing arguments
@@ -106,5 +108,11 @@ syntax:
      syntax:
                function* funct_Name(){
                 yield 1;
-                yield2;               
-                }
+                yield2;
+                .
+                .
+                .
+                yieldn;
+
+               }
+
