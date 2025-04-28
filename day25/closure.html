@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>closure</title>
 </head>
+<button id="btn">click</button>
 <body>
+    <script>
+        function parent(){
+            let count=0;
+            return function child(){
+                count++;
+                console.log(count,' initialized  ');
+                
+            }
+
+        }
+        let subchild=parent();
+        subchild();
+        subchild();
+        subchild();
+        subchild();
+        subchild();
+        subchild();
+        subchild();
+        subchild();
+
+
+//-----------------------------------------------------------
+
+
+function live(home){
+    console.log('welcome to my 🏠 in',home);
+    return function present(){
+        console.log('welcome to my second home 🏠 in',home);
+
+        
+    }
+}
+let subhome=live('hyderabad');
+subhome();
+//------------------------------------------------------------------------
+function createclickHandler(msg){
+    return function(){
+        console.log(msg);
+        
+    }
     
+}
+let btn=document.getElementById('btn');
+btn.addEventListener('click',createclickHandler('hello everyone'));
+    
+function multiply(multiplier){
+    return function(n){
+        return multiplier**n;
+
+    }
+}
+let value=multiply(10);
+let value1=value(2);
+console.log(value1);
+
+//--------------------------------------------------------------------------
+let Obj1={name:'dinesh',
+            age:20,
+            training:'fsd',
+            fun:()=>{
+                console.log();
+                
+                console.log('name:',Obj1.name,',','age:',Obj1.age,';');
+            }
+
+       
+}
+Obj1.fun();
+console.log(Obj1.fun());
+console.log(Obj1.name);
+
+
+
+
+
+
+    </script>
 </body>
 </html>
