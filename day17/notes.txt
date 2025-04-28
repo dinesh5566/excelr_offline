@@ -22,20 +22,16 @@ types:
      higher order functions
 
 ============================================================================
-
-<<<<<<< HEAD
 1.function decleation/named function/general function:
    ------------------------------------------------
-=======
-function decleation/named function/general function:
----------------------------------------------------
->>>>>>> a1330d4a79fd7e46e20ccab3477f66bb632eef4c
+
+
+
+
     syntax:
     function functionName/Identifier(){
         //set to sentence that performs a task
     }
-
-<<<<<<< HEAD
    -------------------------------------------------------
 
      //passing arguments
