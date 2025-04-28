@@ -106,13 +106,5 @@ syntax:
      syntax:
                function* funct_Name(){
                 yield 1;
-                yield2;
-                .
-                .
-                .
-                yieldn;
-
-               }
-=======
-
->>>>>>> a1330d4a79fd7e46e20ccab3477f66bb632eef4c
+                yield2;               
+                }
