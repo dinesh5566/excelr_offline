@@ -13,3 +13,27 @@ this:
    -it is a keyword that refers to the current object
    -it is use dto acces the properties and methods of objects
    
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Extensions:
+
+      git hub codespaces
+      git hub pullreequest
+      git hub repositories
+
+
+      remote explorer
+
+-----------------------------------------------------------------------------------------------------------------------
+call():
+-----
+    -it is a method used to call a function
+    -when you need to invoke a function immedietly wit a specific value (this)
+    -pass an argument to a function in the form of value 
+
+-------------------------------------------------------------------------------------------------------------------------------
+apply():
+------
+    -it is a methtod used to call a function
+    -when you need to invoke a function immedietly wit a specific value (this)
+    -pass an arguments to a function in the form of array
