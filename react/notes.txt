@@ -1,0 +1,47 @@
+Day 27:
+------
+React:
+     -react is a javascript library it is used to create user interfaces.
+     -it is released by facebook in 2013.(jordan walk)
+     -resadct is declerative, efficient and flexible javascript liibrary for building user interfaces.
+     -it is used to develop single page applications.
+     -react is component-based frontend library.
+     -react makes it painless to create interactive UIs
+     -recat is used to develop mobile applications,web applications and desktop applications
+
+ who uses React:
+        -facebook
+        -netflix
+        -airbnb
+        -instagram
+        -snapchat
+        -youtube
+        -spotify
+        -tinder
+ why use React:
+        -High performance with virtual DOM
+        -Sngle page application
+        -Easy to learn and implement
+        -Free and open source
+        -Huge ecosystem of libraries
+        -It is easy to integrate with other existing projects
+        -It is fast and efficient
+
+---------------------------------------------------------------------------------------------------------
+create react project:
+---------------------
+         steps:
+         -----
+              1.Create a folder
+              2.open terminal for the folder(cmd)
+              3.npx create-react-app project_name
+       npx : node package execution , it is a command line tool that allows you to execute npm packages directly from the command line
+              4.cd project_name
+              5.npm  start
+
+-----------------------or-------------------------------------------------------------------
+steps:
+    1.create a folder
+    2.open terminal for the folder(cmd)
+    3.npm create vite@latest
+
