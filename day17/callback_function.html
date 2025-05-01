@@ -11,11 +11,11 @@
 
                 let username = prompt("Enter your name");
 
-                function authentication(username, issuccess, isfailure1, isfailure2, isfailure) {
-                  if (username === "Dinesh") {
+                function authentication(username, issuccess, isfailure1, isfailure2) {
+                  if (username == "Dinesh") {
                     let password = prompt("Enter your password"); 
                     if (password == 1234) {
-                      issuccess(username);
+                      issuccess();
                     } else {
                       isfailure1(password !=1234);
                     }
@@ -24,7 +24,7 @@
                   }
                 }
 
-                function issuccess(username) {
+                function issuccess() {
                   document.write(`Welcome ${username}`);
                 }
 
@@ -36,11 +36,9 @@
                   document.write(`Username is wrong`);
                 }
 
-                function isfailure() {
-                  document.write(`Username and password are wrong`);
-                }
+                
 
-                authentication(username, issuccess, isfailure1, isfailure2, isfailure);
+                authentication(username, issuccess, isfailure1, isfailure2);
           
 
 

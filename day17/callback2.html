@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button id="myButton">Click Me</button>
+</head>
+<body>
+    <script>
+        function syncFunction() {
+        console.log("1. Synchronous function is running");
+        }
+
+        function asyncFunction(callback) {
+        setTimeout(() => {
+            console.log("2. Asynchronous operation done (after 2 seconds)");
+            callback(); // calling callback when async is done
+        }, 2000);
+        }
+
+        function afterAsync() {
+        console.log("3. Callback after async function");
+        }
+
+        // Run sync and async
+        syncFunction();
+        asyncFunction(afterAsync);
+        console.log("4. Last line in main thread");
+
+  //----------------------------------------------------------------------------------------------------------------------------
+   // 1. Grab the element
+    const btn = document.getElementById('myButton');
+
+    // 2. Define a named callback
+    function handleClick(event) {
+      console.log('Button was clicked!', event);
+      // you can access event properties, e.g. event.target, event.type, etc.
+    }
+
+    // 3. Register the callback for the 'click' event
+     btn.addEventListener('click', handleClick);
+  //--------------------------------------------------------------------------------
+     
+
+  </script>
+
+
+  
+</body>
+</html>
+
+
+  

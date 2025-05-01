@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <script>
+        // console.log(this);
+        // let obj1={
+        //     name:'Dinesh Kumar',
+        //     age:20,
+        //     fun:()=>{
+        //         console.log(this);
+        //     }
+        // }
+        // obj1.fun();
+        // console.log("name:"+obj1.name,"age:"+obj1.age);
+        // console.log(obj1);
+
+// -------------------------------------------------------------------------------
+function user(name,age){
+    this.username=name;
+    this.userage=age;
+   console.log(name,age);
+    
+    
+}
+
+let user1=new user("Dinesh kumar",20);
+console.log(user1);
+
+        
+        
+        
+    </script>
+</body>
+</html>
