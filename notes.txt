@@ -1,0 +1,121 @@
+Day 27:
+------
+React:
+     -react is a javascript library it is used to create user interfaces.
+     -it is released by facebook in 2013.(jordan walk)
+     -resadct is declerative, efficient and flexible javascript liibrary for building user interfaces.
+     -it is used to develop single page applications.
+     -react is component-based frontend library.
+     -react makes it painless to create interactive UIs
+     -recat is used to develop mobile applications,web applications and desktop applications
+
+ who uses React:
+        -facebook
+        -netflix
+        -airbnb
+        -instagram
+        -snapchat
+        -youtube
+        -spotify
+        -tinder
+ why use React:
+        -High performance with virtual DOM
+        -Sngle page application
+        -Easy to learn and implement
+        -Free and open source
+        -Huge ecosystem of libraries
+        -It is easy to integrate with other existing projects
+        -It is fast and efficient
+
+---------------------------------------------------------------------------------------------------------
+create react project:
+---------------------
+         steps:
+         -----
+              1.Create a folder
+              2.open terminal for the folder(cmd)
+              3.npx create-react-app project_name
+       npx : node package execution , it is a command line tool that allows you to execute npm packages directly from the command line
+              4.cd project_name
+              5.npm  start
+
+-----------------------or-------------------------------------------------------------------
+steps:
+    1.create a folder
+    2.open terminal for the folder(cmd)
+    3.npm create vite@latest
+                    project_name: name of the project
+                    framework : react
+                    variant : javascript
+    4.cd project_name
+    5.npm install (installing dependencies /node packages)
+            (npm-node package manager)
+    6.npm run dev
+
+-------------------------------------------------------------------------
+jsx - javascript XML(extension of js)
+      (XML-Extensible markup language)
+    - we can write html in js
+
+-------------------------------------------------------------------------------------
+components:
+       ex:header component, footer component, sidebar component etc..
+
+1. create jsx flexible
+2.declare tthe component(function)
+3.return the jsx code(encapsulate/wrap the jsx code)
+  -wrapping ccan be done
+                     1.using div tag
+                     2.using fragment tag <></>
+                     3.using template string ``
+                     4.using react.fragment <React.Fragment></React.Fragment>
+4.import the component in app.js
+5.use the components in remaining jsxx files
+                   (import in main.jsx file )
+
+---------------------------------------------------------------------------------------
+ Components:
+   ex:header component , footer component, sidebar component etc..
+   - it is a function/class that returns a jsx code
+   - it is a re-usable component
+   - it is a file that contains jsx code(html in js file)
+   - we can create a component in two ways
+                    1. function component
+                    2. class component
+   1.Functional component:
+   ----------------------
+       syntax:
+            functional componenet_Name(){
+              return (
+                     <>
+                       <h1>hello world</h1>
+                     </>
+              
+              )
+            }
+             export default component_name;
+
+  2.Class component:
+  ------------------
+         syntax:
+              const componenet_Name extends react.components{
+                     render(){
+                            return(
+                                   <>
+                                     <h1>hello world</h1>
+                                   </>
+                            )
+                     }
+              }
+--------------------------------------------------------------------------------
+           
+                    function                             class
+       ---------------------------------------------------------------------------------------------------       
+syntax:             js function                         ES6 class syntax
+render()            not required                        required
+state               usestate                            this.state
+props               props                               this.props
+this key            not required                        required
+readablity          clean                               more boilerplate 
+preffered           modern standard                     older standard(deprecated)
+-------------------------------------------------------------------------------------------------------------------
